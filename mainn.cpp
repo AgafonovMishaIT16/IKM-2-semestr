@@ -1,11 +1,5 @@
 #include "Headerrr.h"
 #include <windows.h>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-
-using namespace std;
 
 int main() {
 
