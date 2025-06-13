@@ -28,7 +28,7 @@ public:
     BinaryTree();
     ~BinaryTree();
 
-    void buildFromFile(const string& filename = "Текст.txt");
+    void buildFromFile(const string& filename = "Text.txt");
     void printTree() const;
     bool isEmpty() const;
 };
