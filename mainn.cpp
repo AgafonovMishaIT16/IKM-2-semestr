@@ -1,6 +1,5 @@
-﻿#include "Headerrr.h"
+#include "Headerrr.h"
 #include <windows.h>
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -9,6 +8,7 @@
 using namespace std;
 
 int main() {
+
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "Russian");
 
@@ -25,13 +25,16 @@ int main() {
     cout << " " << endl;
 
     try {
-        BinaryTree tree;
-        tree.buildFromFile();
-        tree.printTree();
+        // Основная логика программы
+        BinaryTree tree;            // Создание объекта бинарного дерева
+        tree.buildFromFile();        // Построение дерева из файла
+        tree.printTree();           // Вывод структуры дерева на экран
     }
     catch (const exception& e) {
+        // Обработка возможных исключений
         cerr << "Ошибка: " << e.what() << endl;
-        return 1;
+        return 1; 
     }
+    
     return 0;
 }
